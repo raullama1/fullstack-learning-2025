@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+#rect {
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#rect1 {
+    position: relative;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    background-color: black;
+    z-index: 9;
+}
+
+#rect1 .material-icons {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#rect2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    filter: blur(3px);
+    font-style: italic;
+    text-align: justify;
+}

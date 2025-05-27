@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+#nav {
+  height: 5rem;
+  width: 100%;
+  background-color: #fcfdf7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+}
+
+#nav-l {
+  height: 5rem;
+  width: 6rem;
+}
+#nav-l img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#nav-m a {
+  text-decoration: none;
+  margin: 0.5rem;
+  color: black;
+}
+
+#nav-r button {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+}
+#nav-r button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

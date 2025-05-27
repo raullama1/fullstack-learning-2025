@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#hero {
+  height: 40%;
+  border: 2px;
+  width: 100%;
+  color: white;
+}
+
+#hero h1 {
+  text-align: center;
+}
+#hero h1:nth-child(1) {
+  color: red;
+  /* background-color: bisque; */
+  margin-top: 30px;
+}
+
+#hero h1:nth-child(2) {
+  color: blue;
+  /* background-color: aquamarine; */
+}
+#hero p {
+  margin-top: 50px;
+  color: greenyellow;
+  text-align: center;
+}
+#hero span {
+  color: orange;
+  text-align: center;
+  text-transform: uppercase;
+}

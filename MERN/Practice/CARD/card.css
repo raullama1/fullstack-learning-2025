@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'GoodDog Plain';
+    font-weight: 100;
+}
+
+#card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40vw;
+    width: 34vw;
+    background-color: #FFD700;
+    border-radius: 1vw;
+    border: .2vw solid rgba(0, 0, 0, 0.64);
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.444);
+}
+
+#top {
+    height: 50%;
+    width: 100%; 
+    background-image: url(https://images.unsplash.com/photo-1747595509327-20fb3e0c3216?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: .8vw;
+    border-top-right-radius: .8vw;
+}
+
+#btm {  
+    height: 50%;
+    width: 100%;
+    background-color: #FF6347;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-bottom-left-radius: .8vw;
+    border-bottom-right-radius: .8vw;
+    padding-left: 1vw;
+}
+#btm h1{
+    font-size: 2.5vw;
+}
+#btm p{
+    font-size: 1.2vw;
+}
+#btm button {
+    text-decoration: none;
+    font-size: 2vw;
+    border: .1vw solid black;
+    border-radius: .7vw;
+    padding: .5vw 2vw .5vw 2vw;
+    background-color: #FFD700;
+    font-family: 'GoodDog Plain';
+}
+
+#btm button:hover {
+    background-color: black;
+    border: .1vw solid #FFD700;
+    color: #FFD700;
+}
+
+#btm-para {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-right: 6vw;
+    padding-left: 1vw;
+}
+
+#btm-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2.5vw;
+}
