@@ -1,0 +1,697 @@
+/* ------------------ Fonts ------------------ */
+
+@font-face {
+  font-family: "EC-R";
+  src: url(./Assets/Font/EuclidCircularA-Regular.woff2);
+}
+
+@font-face {
+  font-family: "EC-M";
+  src: url(./Assets/Font/EuclidCircularA-Medium.woff2);
+}
+
+@font-face {
+  font-family: "EC-B";
+  src: url(./Assets/Font/EuclidCircularA-Bold.woff2);
+}
+
+/* ------------------ Color Variables ------------------ */
+
+:root {
+  --first: #f57224;
+  --second: #f5f5f5;
+  --third: #000000;
+  --fourth: #0f136d;
+  --fifth: #1a9cb8;
+  --sixth: #888;
+  --seventh: #6c1d00;
+}
+
+/* ---------------- Reset & Global Styles ---------------- */
+
+/* CSS Reset (removes default spacing and box sizing issues) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default page size */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+/* ------------------ Layout Structure ------------------ */
+
+#main {
+  height: 100vh;
+  width: 100%;
+  font-family: "EC-R", sans-serif;
+}
+
+/* Nav Section Starts Here */
+
+#nav {
+  position: fixed;
+  height: 14%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* ------------ Navigation Top Section ------------ */
+
+#nav-top {
+  height: 35.5%;
+  width: 100%;
+  background-color: var(--first);
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  padding-right: 7rem;
+}
+.top-link-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  color: var(--second);
+  font-size: 0.72rem; /* responsive unit */
+  line-height: 25px;
+  letter-spacing: normal;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+/* -------------- Navigation Bottom Section ------------- */
+
+#nav-btm {
+  height: 64.5%;
+  width: 100%;
+  background-color: var(--first);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 22.8%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.4rem 0 0 3rem;
+}
+.logo img {
+  height: 2.5rem;
+  width: 7.9375rem;
+}
+
+.search-bar {
+  height: 100%;
+  width: 47.8%;
+}
+
+.input-wrapper {
+  width: 100%;
+  max-width: 43rem;
+  display: flex;
+  align-items: center;
+}
+.input-wrapper input {
+  height: 2.8125rem;
+  width: 43rem;
+  border: none;
+  outline: none;
+  padding-left: 1.2rem;
+}
+.input-wrapper input::placeholder {
+  color: var(--sixth);
+}
+
+.search-btn {
+  height: 2.8125rem;
+  width: 3rem;
+  border: none;
+  background-color: #FFE1D2;
+  color: var(--first);
+  font-size: 1.3rem;
+}
+
+.cart {
+  height: 100%;
+  width: calc(100% - 22.8% - 47.8%);
+}
+
+.cart svg {
+  margin: 13px 0 0 30px;
+}
+
+/* Nav Section Ends Here */
+
+/* ------------------ Hero Section Starts Here ------------------ */
+
+#hero {
+  width: 100%;
+  height: 65.8vh;
+  display: flex;
+  padding-top: 7.4rem;
+}
+
+/* ------------------ Slider Section ------------------ */
+
+#hero-l {
+  height: 100%;
+  width: 988px;
+  margin-left: 7.8rem;
+}
+#hero-l img {
+  height: 100%;
+  width: 988px;
+}
+
+/* ------------------ Download ------------------ */
+
+#hero-r {
+  width: 194px;
+  height: 100%;
+  margin-left: 0.5rem;
+  padding: 6px;
+  background: linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0)),
+    linear-gradient(179.27deg, #ffedd6 0.83%, #ffc3e3 46.78%, #fff 99.57%),
+    linear-gradient(0deg, #fff, #fff);
+}
+
+/* ------------------ HERO-R-TOP ------------------ */
+
+#hero-r-top {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-r-top img {
+  height: 42px;
+  width: 24.5px;
+}
+
+.title {
+  color: #6c1d00;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 1rem;
+  font-family: "EC-M";
+}
+
+/* ------------------ HERO-R-MID ------------------ */
+
+#hero-r-mid {
+  font-family: "EC-M";
+  background-image: url(https://img.lazcdn.com/g/tps/imgextra/i2/O1CN01tceZus1IewufOY1tZ_!!6000000000919-2-tps-364-316.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 158px;
+  margin-top: 6px;
+  width: 100%;
+  padding-left: 6px;
+  padding-top: 2px;
+  color: var(--second);
+}
+
+/* ------------------ MID-TOP ------------------ */
+
+#hero-r-mid #rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 6px;
+}
+
+#rating img {
+  height: 9.47px;
+  width: 10px;
+}
+#rating .rated-text {
+  font-size: 10px;
+  color: var(--second);
+}
+/* ------------------ MID-MID ------------------ */
+
+#hero-r-mid #download {
+  height: 30px;
+}
+#hero-r-mid #download span {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  font-family: "EC-M";
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+/* ------------------ MID-BTM ------------------ */
+
+#icon-item {
+  margin-top: 7px;
+  padding-left: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  gap: 9px;
+  line-height: 15px;
+}
+.item-img {
+  height: 36px;
+  width: 36px;
+}
+.item-txt {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+/* ------------------ HERO-R-BTM ------------------ */
+
+#hero-r-btm {
+  margin-top: 6px;
+  height: 108px;
+}
+
+#content {
+  height: 90px;
+  display: flex;
+}
+#content #qr img {
+  height: 90px;
+  width: 90px;
+}
+#download-btn {
+  display: flex;
+  flex-direction: column;
+}
+#download-btn .dl-btn {
+  height: 25px;
+  width: 81px;
+  margin: 10px 10px 0px 7px;
+}
+.dl-text {
+  font-size: 10px;
+  font-family: "EC-M";
+  margin-left: 5px;
+}
+
+/* ------------------ Hero Section Ends Here ------------------ */
+
+/* ------------------ Shop Section Starts Here ------------------ */
+
+#shop-section {
+  height: 3635px;
+  width: 74.4rem;
+  margin: 0 auto;
+}
+
+/* ------------------ Promo Banner ------------------ */
+
+#promo-banner {
+  display: flex;
+  justify-content: center;
+}
+#promo-banner img {
+  height: 183.48px;
+  width: 1098.16px;
+}
+
+/* ------------------ Flash Sale Section Start------------------ */
+
+.promo-heading {
+  font-size: 22px;
+  color: var(--third);
+}
+
+#flash {
+  width: 1188px;
+  height: 385px;
+  margin-top: 18px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+.sale-header {
+  height: 4.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--third);
+}
+
+.on-sale {
+  font-size: 14px;
+  font-family: "EC-B";
+  color: var(--first);
+  margin-left: 1.4rem;
+  margin-top: 7px;
+}
+
+.shop-button {
+  background-color: var(--second);
+  border: 1px solid var(--first);
+  padding: 8px 9px;
+  color: var(--first);
+  font-family: "EC-M";
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Product starts */
+
+.f-products {
+  display: flex;
+  gap: 12px;
+  height: 375px;
+  margin-top: 10px;
+}
+
+.f-product {
+  background: white;
+  width: 188px;
+  height: 290px;
+  cursor: pointer;
+}
+.f-product:hover {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.213);
+}
+
+.f-product img {
+  width: 188px;
+  height: 188px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.f-title {
+  font-size: 14px;
+  margin: 2px 0px 5px 8px;
+}
+
+.f-price {
+  color: var(--first);
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.f-old-price {
+  text-decoration: line-through;
+  color: var(--sixth);
+  font-size: 12px;
+}
+
+.f-discount {
+  color: var(--third);
+  font-size: 12px;
+}
+
+/* ------------------ Flash Section Ends Here ------------------ */
+
+/* ------------------ Categories Section Starts Here ------------------ */
+
+#categories {
+  margin-top: 2rem;
+  height: 296px;
+  width: 1188px;
+}
+.c-heading {
+  width: 100%;
+  height: 38px;
+  background-color: whitesmoke;
+  font-size: 22px;
+  font-family: "EC-R";
+}
+#c-card {
+  margin-top: 5px;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.c-item {
+  border-right: 1px solid rgba(128, 128, 128, 0.229);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.229);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.c-img {
+  height: 80px;
+  width: 80px;
+  margin-top: 1rem;
+}
+.c-title {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ------------------ Just For You Section Starts Here ------------------ */
+
+#just-for-you {
+  position: relative;
+  width: 1188px;
+  height: 166.5rem;
+  font-family: "EC-R";
+  margin-top: 4rem;
+}
+.j-sale {
+  width: 1188px;
+  height: 2492.75px;
+}
+.j-heading {
+  font-size: 22px;
+}
+
+.j-heading {
+  font-size: 22px;
+  color: var(--third);
+}
+
+#j-card1 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 18px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card2 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card3 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card4 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card5 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card6 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card7 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+
+#j-card8 {
+  width: 1188px;
+  height: 290px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.8rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
+}
+/* Product starts */
+
+.j-products {
+  display: flex;
+  gap: 12px;
+  height: 375px;
+}
+
+.j-product {
+  background: white;
+  width: 188px;
+  height: 290px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.213);
+  /* border: 1px solid black; */
+}
+
+.j-product img {
+  width: 100%;
+  height: 188px;
+  /* border-radius: 5px; */
+  object-fit: cover;
+}
+
+.j-title {
+  font-size: 14px;
+  margin: 2px 0px 5px 8px;
+}
+
+.j-price {
+  color: var(--first);
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.j-old-price {
+  text-decoration: line-through;
+  color: var(--sixth);
+  font-size: 12px;
+}
+
+.j-discount {
+  color: var(--third);
+  font-size: 12px;
+}
+
+.j-button {
+  height: 40px;
+  width: 387px;
+  background-color: var(--second);
+  color: var(--fifth);
+  border: 1px solid var(--fifth);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ------------------ Just For You Section Ends Here ------------------ */
+
+/* ------------------ Shop Section Ends Here ------------------ */
+
+/* ------------------ Footer Section Starts Here ------------------ */
+#footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 1.5rem;
+}
+/* Footer First */
+#footer-first {
+  width: 100%;
+  height: 301px;
+  background-color: var(--sixth);
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+#f-left {
+  display: flex;
+  flex-direction: column;
+}
+#f-left a {
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 1.1rem;
+  
+}
+#f-mid {
+  display: flex;
+  flex-direction: column;
+}
+#f-mid h2{
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+#f-mid a {
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 1.1rem;
+}
+
+#f-right {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 10rem 0 0;
+}
+#right-1 {
+  display: flex;
+  gap: 1rem;
+}
+#right-1 img {
+  width: 42px;
+  height: 42px
+}
+#right-2 .r-2-img2 {
+  margin-left: 7px;
+}
+#right-2 .r-2-img3 {
+  margin-top: 5px;
+}
+
+ .footer-second {
+    background-color: #fff;
+    padding: 20px 0 25px;
+}
+.lzd-footer-inner{
+  display: flex;
+  gap: 8rem;
+  margin-left: 10rem;
+}
+/* ------------------ Footer Section Ends Here ------------------ */

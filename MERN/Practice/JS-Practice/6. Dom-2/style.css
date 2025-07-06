@@ -1,0 +1,82 @@
+/* when press HTML only HTML content and when press CSS only CSS content will be shown  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#nav{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3rem;
+    /* background-color: aqua; */
+}
+.btn {
+    background-color: bisque;
+    color: black;
+    /* border: 1px solid bisque; */
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btn:hover {
+    background-color: black;
+    color: bisque;
+    border: 1px solid bisque;
+    transition-duration: 1s;
+}
+
+#hero {
+    height: calc(100% - 20%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contents {
+    height: 85%;
+    width: 80%;
+    background-color: bisque;
+    border-radius: 1rem;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+#html-content {
+    display: none;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+#css-content {
+    display: none;
+    font-size: 1rem;
+    line-height: 2;
+}
+#css-content .ul2 {
+    margin-left: 1rem;
+    font-size: .8rem;
+}

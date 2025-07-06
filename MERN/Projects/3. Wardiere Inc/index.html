@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <!-- Navigation -->
+      <div id="nav">
+        <!-- Nav Left -->
+        <div id="nav-left">
+          <img src="./Assets/Images/logo.jpeg" alt="" />
+          <h2>Wardiere Inc</h2>
+        </div>
+
+        <!-- Nav Middle -->
+        <div id="nav-mid">
+          <a class="current" href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Service</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+
+        <!-- Nav Right -->
+        <div id="nav-right">
+          <button class="btn-primary">Shop Now</button>
+        </div>
+
+        <!-- Nav Mobile -->
+        <div id="nav-mobile">
+
+          <button id="hamburger"><i class="ri-menu-line"></i></button>
+
+          <div id="nav-mobile-links">
+            <button id="close-sidebar"><i class="ri-close-line"></i></button>
+            <a class="current" href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./service.html">Service</a>
+            <a href="./contact.html">Contact</a>
+            <button class="btn-primary">Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div id="hero">
+        <!-- Hero Left -->
+        <div id="hero-left">
+          <div id="h-l-p">
+            <p>
+              We are always ready <br />to help you with your <br />problematic
+              vehicle.
+            </p>
+          </div>
+          <div id="h-l-btn">
+            <button class="btn-primary">Contact Us</button>
+          </div>
+        </div>
+
+        <!-- Hero Mid -->
+        <div id="hero-mid">
+          <div id="h-m-img">
+            <img src="./Assets/Images/hero.png" alt="Bike Image" />
+          </div>
+        </div>
+
+        <!-- Hero Right -->
+        <div id="hero-right">
+          <div id="h-r-img">
+            <img src="./Assets/Images/part.png" alt="" />
+          </div>
+          <div id="h-r-p">
+            <p>Motorcycle</p>
+            <p>Maintainance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

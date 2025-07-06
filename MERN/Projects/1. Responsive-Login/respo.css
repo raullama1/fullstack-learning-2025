@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #1B5F74;
+    --secondary-color: #DDF1F0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+#login {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#login-l {
+    height: 100%;
+    width: 50%;
+    background-image: url(./background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5vw;
+    gap: 2vw;
+    color: var(--primary-color);
+}
+#login-l h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+#login-l p {
+    font-size: 1.5rem;
+    padding: 0 5vw;
+    text-align: justify;
+}
+
+#login-r {
+    height: 100%;
+    width: 50%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#login-r h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#login-r form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+#login-r form input {
+    width: 40rem;
+    height: 5rem;
+    border-radius: 5rem;
+    padding-left: 2vw;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--secondary-color);
+}
+#login-r input::placeholder {
+    color: rgba(255, 255, 255, 0.727);
+    opacity: 1; 
+    font-size: 1.2rem;
+  }
+
+#btm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+#btm a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+#login-r button {
+    /* padding: .7vw 2vw; */
+    height: 4.2rem;
+    width: 12rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+/* -----------------------desktop------------------- */
+@media screen and (max-width: 1993px) and (min-width: 1596px) {
+
+    #login-l h1 {
+        font-size: 4rem;
+    }
+    
+    #login-l p {
+        font-size: 1.3rem;
+        padding: 0 5vw;
+        text-align: justify;
+    }
+
+    #login-r h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+    #login-r form input {
+        width: 30rem;
+        height: 4rem;
+        border-radius: 5rem;
+        padding-left: 2vw;
+        background-color: var(--primary-color);
+        border: none;
+        color: var(--secondary-color);
+    }
+
+    #btm a{
+        font-size: 1.5rem;
+    }
+
+    #login-r button {
+        height: 3.5rem;
+        width: 9rem;
+        /* border-radius: .5rem; */
+        font-size: 1.6rem;
+    }
+    
+}
+
+/* -----------------------laptop------------------- */
+@media screen and (max-width: 1595px) and (min-width: 1316px) {
+
+    #login-l h1 {
+        font-size: 3.3rem;
+    }
+    
+    #login-l p {
+        font-size: 1rem;
+        padding: 0 5vw;
+        text-align: justify;
+    }
+
+    #login-r h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+    #login-r form input {
+        width: 28rem;
+        height: 3.5rem;
+        border-radius: 5rem;
+        padding-left: 2vw;
+        background-color: var(--primary-color);
+        border: none;
+        color: var(--secondary-color);
+    }
+
+    #btm a{
+        font-size: 1.3rem;
+    }
+
+    #login-r button {
+        height: 2.8rem;
+        width: 7rem;
+        /* border-radius: .5rem; */
+        font-size: 1.3rem;
+    }
+    
+}

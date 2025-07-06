@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- when press HTML only HTML content and when press CSS only CSS content will be shown -->
+    <div id="main">
+        <div id="nav">
+            <!-- HTML -->
+            <button class="btn" onclick="htmlContent()" id="html-btn">HTML</button>
+            <!-- CSS -->
+            <button class="btn" id="css-btn">CSS</button>
+            <br>
+        </div>
+        <div id="hero">
+            <div id="contents">
+                <!-- HTML content -->
+                <div id="html-content">
+                    <!-- <h1>HTML</h1> -->
+                     <ul>
+                        <li>HTML is the standard markup language for creating web pages.</li>
+                        <li>HTML describes the structure of a web page.</li>
+                        <li>HTML consists of a series of elements.</li>
+                        <li>HTML elements tell the browser how to display the content.</li>
+                        <li>HTML elements are the building blocks of HTML pages.</li>
+                        <li>HTML elements are represented by tags.</li>
+                        <li>HTML tags label or give instructions to the browser on how to display the content.</li>
+                        <li>HTML elements are the building blocks of HTML pages.</li>
+                        <li>HTML tags label or give instructions to the browser on how to display the content.</li>
+                        <li>HTML elements are represented by tags.</li>
+                        <li>HTML is the standard markup language for creating web pages.</li>
+                     </ul>
+
+
+                </div>
+                <!-- CSS content -->
+                <div id="css-content">
+                    <ul>
+                        <li>CSS is the language we use to style an HTML document.</li>
+                        <li>CSS describes how HTML elements should be displayed.</li>
+                        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+                        <li>External stylesheets are stored in CSS files.</li>
+                        <li>CSS can be added to an HTML document in 3 ways:</li>
+                        <ul class="ul2">
+                            <li>Inline - by using the style attribute inside HTML elements</li>
+                            <li>Internal - by using a style element in the head section</li>
+                            <li>External - by using a link element to link to an external style sheet</li>
+                        </ul>
+                        <li>The most common way to add CSS is to keep the styles in separate files.</li>
+                        <li>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</li>
+                        <li>CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</li>
+                        <li>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

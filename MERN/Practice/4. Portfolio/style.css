@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+  font-family: Verdana;
+  cursor: default;
+  overflow: auto;
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+/* nav left side */
+#nav-l img {
+  height: 3rem;
+  width: 4.6rem;
+}
+/* nav right side */
+#nav-r a {
+  text-decoration: none;
+  color: black;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+}
+#nav-r a:hover {
+    color: #941413;
+    transition-duration: .4s;
+}
+
+#hero {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* hero left side */
+#hero-l {
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-left: 7rem;
+}
+
+#hero-l h1 {
+  font-size: 3rem;
+}
+#hero-l h1 span {
+  color: #fec900;
+}
+#hero-l h1 span:hover {
+  color: #941413;
+  transition-duration: .4s;
+}
+
+#hero-l h4 {
+  font-size: 1.6rem;
+}
+#hero-l h4 span {
+  color: #941413;
+}
+#hero-l h4 span:hover {
+  color: #fec900;
+  transition-duration: .4s;
+}
+
+
+#hero-l button {
+  padding: 0.8rem 2rem;
+  box-shadow: #000000 0rem 0.2rem 1rem;
+  border-radius: 2rem;
+  background-color: #941413;
+  color: white;
+  border: none;
+  /* margin-top: .2rem; */
+  font-size: 1.2rem;
+  cursor: s-resize;
+}
+#hero-l button:hover {
+  background-color: #fec900;
+  color: black;
+  transition-duration: .4s;
+}
+
+#hero-l button i {
+  font-size: 1vw;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+
+#links {
+  width: 100%;
+  margin-top: 1rem;
+}
+#links a {
+  text-decoration: none;
+}
+#links a i {
+  background-color: #941413;
+  color: #fec900;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+#links a:hover i:hover {
+    background-color: #fec900;
+    color: #941413;
+    transition-duration: .4s;
+}
+
+
+/* hero right side */
+#hero-r {
+  width: 50%;
+  position: relative;
+}
+
+#hero-r img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
